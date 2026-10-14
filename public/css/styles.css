@@ -1,0 +1,39 @@
+:root {
+  --bg:#CCCCFF;
+  --card:#ffffff;
+  --primary:#292966;
+  --accent:#5C5C99;
+  --muted:#A3A3CC;
+  --light:#CCCCFF;
+  --danger:#dc2626;
+  --text:#1e1e3f;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#CCCCFF 0%,#A3A3CC 100%);margin:0;color:var(--text);min-height:100vh}
+.container{max-width:1120px;margin:0 auto;padding:1rem}
+.card{background:var(--card);border:1px solid var(--muted);border-radius:12px;box-shadow:0 4px 12px rgba(41,41,102,.12);padding:1.25rem;margin-bottom:1rem}
+h1,h2,h3{margin:.2rem 0 .8rem;color:var(--primary)}
+label{display:block;font-weight:600;margin:.4rem 0 .2rem;color:var(--primary)}
+input,select,textarea{width:100%;padding:.55rem;border:1px solid var(--muted);border-radius:8px;font:inherit;background:#f7f7ff}
+button{background:var(--primary);color:#fff;border:0;border-radius:8px;padding:.55rem 1rem;cursor:pointer;font:inherit;transition:transform .1s ease,background .2s}
+button:hover{background:var(--accent);transform:translateY(-1px)}
+button.secondary{background:var(--accent)}
+button.danger{background:var(--danger)}
+nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+nav button{background:var(--light);color:var(--primary);border:1px solid var(--muted)}
+nav button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:.55rem;border-bottom:1px solid var(--light);text-align:left;font-size:.9rem}
+.table th{background:var(--light);color:var(--primary)}
+.badge{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.75rem;background:var(--light);color:var(--primary)}
+.badge.admin{background:var(--muted);color:var(--primary)}
+.hidden{display:none}
+.row{display:flex;gap:.75rem;flex-wrap:wrap}
+.row>*{flex:1;min-width:180px}
+.msg{padding:.6rem;border-radius:8px;margin:.5rem 0}
+.msg.ok{background:#e6ffe6;color:#166534;border:1px solid #b7e4b7}
+.msg.err{background:#ffe6e6;color:#991b1b;border:1px solid #f0b7b7}
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center}
+.login-card{width:360px}
+.brand{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem}
+.brand img{height:48px}

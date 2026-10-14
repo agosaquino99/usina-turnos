@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agenda - Usina</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="brand"><img src="/images/logo.svg" alt="Usina del Conocimiento"><h2 id="welcome">Agenda</h2></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>
+        <span id="roleBadge" class="badge"></span>
+        <button class="secondary" onclick="logout()">Cerrar sesion</button>
+      </div>
+    </div>
+    <nav>
+      <button data-tab="reunion" class="active">Sala de Reuniones</button>
+      <button data-tab="general">Sala General</button>
+      <button data-tab="mine">Mis reservas</button>
+      <button data-tab="admin" id="adminTab" class="hidden">Administracion</button>
+    </nav>
+  </div>
+
+  <div id="tab-reunion" class="tab">
+    <div class="card">
+      <h3>Nueva reserva</h3>
+      <div id="resMsg"></div>
+      <div class="row">
+        <div><label>Fecha</label><input type="date" id="resDate"></div>
+        <div><label>Inicio</label><input type="time" id="resStart"></div>
+        <div><label>Fin</label><input type="time" id="resEnd"></div>
+      </div>
+      <label>Motivo</label>
+      <textarea id="resPurpose" rows="2"></textarea>
+      <div style="margin-top:.8rem"><button onclick="createReservation()">Reservar</button></div>
+    </div>
+    <div class="card">
+      <h3>Disponibilidad por dia</h3>
+      <div class="row">
+        <div><label>Fecha</label><input type="date" id="availDate"></div>
+        <div><label>&nbsp;</label><button onclick="loadAvailability()">Consultar</button></div>
+      </div>
+      <div id="availMsg"></div>
+      <table class="table" id="availTable"><thead><tr><th>Inicio</th><th>Fin</th><th>Motivo</th><th>Usuario</th></tr></thead><tbody></tbody></table>
+    </div>
+    <div class="card">
+      <h3>Proximas reservas</h3>
+      <table class="table" id="upcomingResTable"><thead><tr><th>Fecha</th><th>Inicio</th><th>Fin</th><th>Sala</th><th>Motivo</th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="tab-general" class="tab hidden">
+    <div class="card">
+      <h3>Eventos programados</h3>
+      <div class="row">
+        <div><label>Fecha (opcional)</label><input type="date" id="evtFilterDate"></div>
+        <div><label>&nbsp;</label><button onclick="loadEvents()">Consultar</button></div>
+      </div>
+      <div id="evtMsg"></div>
+      <table class="table" id="eventsTable"><thead><tr><th>Fecha</th><th>Inicio</th><th>Fin</th><th>Titulo</th><th>Descripcion</th></tr></thead><tbody></tbody></table>
+    </div>
+    <div class="card hidden" id="evtAdminCard">
+      <h3>Registrar evento (admin)</h3>
+      <div id="evtRegMsg"></div>
+      <div class="row">
+        <div><label>Fecha</label><input type="date" id="evtDate"></div>
+        <div><label>Inicio</label><input type="time" id="evtStart"></div>
+        <div><label>Fin</label><input type="time" id="evtEnd"></div>
+      </div>
+      <label>Titulo</label><input id="evtTitle">
+      <label>Descripcion</label><textarea id="evtDesc" rows="2"></textarea>
+      <div style="margin-top:.8rem"><button onclick="createEvent()">Registrar evento</button></div>
+    </div>
+    <div class="card">
+      <h3>Proximos eventos</h3>
+      <table class="table" id="upcomingEvtTable"><thead><tr><th>Fecha</th><th>Inicio</th><th>Fin</th><th>Titulo</th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="tab-mine" class="tab hidden">
+    <div class="card">
+      <h3>Mis reservas</h3>
+      <div id="mineMsg"></div>
+      <table class="table" id="mineTable"><thead><tr><th>Fecha</th><th>Inicio</th><th>Fin</th><th>Sala</th><th>Motivo</th><th>Estado</th><th></th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div id="tab-admin" class="tab hidden">
+    <div class="card">
+      <h3>Usuarios</h3>
+      <div id="adminMsg"></div>
+      <h4>Crear usuario</h4>
+      <div class="row">
+        <div><label>Nombre</label><input id="uName"></div>
+        <div><label>Email</label><input id="uEmail"></div>
+        <div><label>Contrasena</label><input type="password" id="uPass"></div>
+        <div><label>Rol</label><select id="uRole"><option value="user">user</option><option value="admin">admin</option></select></div>
+      </div>
+      <div style="margin-top:.6rem"><button onclick="createUser()">Crear</button></div>
+      <h4 style="margin-top:1rem">Listado</h4>
+      <table class="table" id="usersTable"><thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th></th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html> -->
+```
+Oops I included trailing `-->`. Need not. Let's write correctly no comment. Actually I included `-->` at end accidentally. I'll fix via rewrite.<|end|><|start|>Assistant to=write<|channel|>analysis <|constrain|>xml<|message|><rfl:parameter name="path">
+C:\Users\Estudiante\Desktop\Proyecto-Resev-Salas\public\app.html

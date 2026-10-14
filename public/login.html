@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login - Agenda Usina</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="login-wrap">
+  <div class="card login-card">
+    <div class="brand"><img src="/images/logo.svg" alt="Usina del Conocimiento"></div>
+    <h2>Agenda Usina</h2>
+    <p class="badge">Iniciar sesion</p>
+    <div id="msg"></div>
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <label>Contrasena</label>
+      <input type="password" name="password" required>
+      <div style="margin-top:1rem">
+        <button type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>
